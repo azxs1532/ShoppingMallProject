@@ -16,6 +16,11 @@
 			</h1>
 		</div>
 	</div>
+	<p>이 페이지는 5초마다 새로고침 됩니다.
+		<%
+			response.setIntHeader("Refresh", 5);
+		%>
+		<p> <%=(new java.util.Date())%>
 	<div class="container">
 		<div class="text-center">
 			<h3>
