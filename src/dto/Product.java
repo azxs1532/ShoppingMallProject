@@ -4,10 +4,8 @@ import java.io.Serializable;
 
 public class Product implements Serializable {
 	
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = -424700572038677000L;
+	
 	private String productId; //상품 아이디
 	private String pname; //상품명
     private Integer unitPrice; // 상품 가격
@@ -16,7 +14,8 @@ public class Product implements Serializable {
     private String category; //분류
     private long unitsInStock; //재고수
     private String condition; //신상품 or 중고품 or 재생품
-    
+    private String filename; //이미지 파일명
+
 	public Product() {
     	super();
     }
@@ -89,5 +88,12 @@ public class Product implements Serializable {
 
 	public void setCondition(String condition) {
 		this.condition = condition;
+	}
+	public String getFilename() {
+		return filename;
+		}
+
+	public void setFilename(String filename) {
+		this.filename = filename;
 	}
 }
